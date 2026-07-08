@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Música</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body style="background-color:#4672c5;">
+
+
+<header>
+    <h1>Tienda de Musica</h1>
+</header>
+
+
+<nav id="inicio">
+    <h2>Indice</h2>
+
+
+    <ul>
+        <li><a href="#discos">Discos</a></li>
+        <li><a href="#stickers">Stickers</a></li>
+        <li><a href="#libros">Libros</a></li>
+        <li><a href="#carrito">Carrito</a></li>
+    </ul>
+</nav>
+
+
+<hr>
+
+
+<section id="discos">
+
+
+<h2>Discos</h2>
+
+
+<div class="producto">
+
+
+<a href="https://youtu.be/5b6qF1qi06I?si=IalmtOnUyrVWvHUp" target="_blank">
+<img src="discos/Señales.jpg" width="240" height="240">
+</a>
+
+
+<p>Callejeros - Señales - $15000</p>
+
+
+<label>
+<input type="checkbox" class="vinilo">
+Vinilo (+$10000)
+</label>
+
+
+<br><br>
+
+
+<button onclick="agregarDisco('Señales',15000,this)">Agregar</button>
+
+
+</div>
+
+
+<div class="producto">
+
+
+<a href="https://youtu.be/PqQfQ_ye22I?si=F6DmwboAAhdmhs6G" target="_blank">
+<img src="discos/arriba las manos.jpg" width="240" height="240">
+</a>
+
+
+<p>Arriba las manos - Los Pibes Chorros - $18000</p>
+
+
+<label>
+<input type="checkbox" class="vinilo">
+Vinilo (+$10000)
+</label>
+
+
+<br><br>
+
+
+<button onclick="agregarDisco('Arriba las manos',18000,this)">Agregar</button>
+
+
+</div>
+
+
+<div class="producto">
+
+
+<a href="https://youtu.be/kVn-zqLmgoU?si=eN5ZgZ-xKPI0ZQq3" target="_blank">
+<img src="discos/rocanroles sin destino.jpg" width="240" height="240">
+</a>
+
+
+<p>Rocanroles sin destino - Callejeros - $17000</p>
+
+
+<label>
+<input type="checkbox" class="vinilo">
+Vinilo (+$10000)
+</label>
+
+
+<br><br>
+
+
+<button onclick="agregarDisco('Rocanroles sin destino',17000,this)">Agregar</button>
+
+
+</div>
+
+
+<div class="producto">
+
+
+<a href="https://youtu.be/9go-wu9U5Bs?si=EXd-po0WoejLwGwG" target="_blank">
+<img src="discos/turrazo.jpg" width="240" height="240">
+</a>
+
+
+<p>Turr4zo - Trueno - $20000</p>
+
+
+<label>
+<input type="checkbox" class="vinilo">
+Vinilo (+$10000)
+</label>
+
+
+<br><br>
+
+
+<button onclick="agregarDisco('Turr4zo',20000,this)">Agregar</button>
+
+
+</div>
+
+
+<div class="producto">
+
+
+<a href="https://youtu.be/dDyXf2U86BM?si=zbSZmdfl5koy2R6m" target="_blank">
+<img src="discos/24k magic.jpg" width="240" height="240">
+</a>
+
+
+<p>24K Magic - Bruno Mars - $22000</p>
+
+
+<label>
+<input type="checkbox" class="vinilo">
+Vinilo (+$10000)
+</label>
+
+
+<br><br>
+
+
+<button onclick="agregarDisco('24K Magic',22000,this)">Agregar</button>
+
+
+</div>
+
+
+<br>
+
+
+<a href="#inicio">
+<button>Volver al índice</button>
+</a>
+
+
+</section>
+
+
+<hr>
+
+
+<section id="stickers">
+
+
+<h2>Stickers</h2>
+
+
+<div class="stickers">
+
+
+<img src="stickers/1000147329.jpg" width="200" height="200"
+title="Peluqueria"
+onclick="agregarSticker('Sticker 1',1000)">
+
+
+<img src="stickers/chapa.jpg" width="200" height="200"
+title="Dame chapa maldita"
+onclick="agregarSticker('Sticker 2',1000)">
+
+
+<img src="stickers/mundial.jpg" width="200" height="200"
+title="MUNDIAL JOACO LOPEZ"
+onclick="agregarSticker('Sticker 3',1000)">
+
+
+<img src="stickers/joaco.png" width="200" height="200"
+title="Joaco"
+onclick="agregarSticker('Sticker 4',1000)">
+
+
+<img src="stickers/croacia.jpg" width="200" height="200"
+title="Conjuntito croacia"
+onclick="agregarSticker('Sticker 5',1000)">
+
+
+</div>
+
+
+<br>
+
+
+<a href="#inicio">
+<button>Volver al índice</button>
+</a>
+
+
+</section>
+
+
+<hr>
+
+
+<section id="libros">
+
+
+<h2>Libros</h2>
+
+
+<div class="producto">
+
+
+<img src="libros/libro1.jpg" width="250" height="400">
+
+
+<p>Libro 1 - $8000</p>
+
+
+<label>
+<input type="radio" name="tapa1">
+Tapa dura
+</label>
+
+
+<label>
+<input type="radio" name="tapa1">
+Tapa blanda
+</label>
+
+
+<br><br>
+
+
+<button onclick="agregarLibro('Libro 1',8000,1)">Agregar</button>
+
+
+</div>
+
+
+<div class="producto">
+
+
+<img src="libros/libro2.jpg"width="250" height="400">
+
+
+<p>Libro 2 - $9000</p>
+
+
+<label>
+<input type="radio" name="tapa2">
+Tapa dura
+</label>
+
+
+<label>
+<input type="radio" name="tapa2">
+Tapa blanda
+</label>
+
+
+<br><br>
+
+
+<button onclick="agregarLibro('Libro 2',9000,2)">Agregar</button>
+
+
+</div>
+
+
+<div class="producto">
+
+
+<img src="libros/libro3.jpg"width="250" height="400">
+
+
+<p>Libro 3 - $9500</p>
+
+
+<label>
+<input type="radio" name="tapa3">
+Tapa dura
+</label>
+
+
+<label>
+<input type="radio" name="tapa3">
+Tapa blanda
+</label>
+
+
+<br><br>
+
+
+<button onclick="agregarLibro('Libro 3',9500,3)">Agregar</button>
+
+
+</div>
+
+
+<div class="producto">
+
+
+<img src="libros/libro4.jpg"width="250" height="400">
+
+
+<p>Libro 4 - $11000</p>
+
+
+<label>
+<input type="radio" name="tapa4">
+Tapa dura
+</label>
+
+
+<label>
+<input type="radio" name="tapa4">
+Tapa blanda
+</label>
+
+
+<br><br>
+
+
+<button onclick="agregarLibro('Libro 4',11000,4)">Agregar</button>
+
+
+</div>
+
+
+<div class="producto">
+
+
+<img src="libros/libro5.jpg"width="250" height="400">
+
+
+<p>Libro 5 - $12000</p>
+
+
+<label>
+<input type="radio" name="tapa5">
+Tapa dura
+</label>
+
+
+<label>
+<input type="radio" name="tapa5">
+Tapa blanda
+</label>
+
+
+<br><br>
+
+
+<button onclick="agregarLibro('Libro 5',12000,5)">Agregar</button>
+
+
+</div>
+
+
+<br>
+
+
+<a href="#inicio">
+<button>Volver al indice</button>
+</a>
+
+
+</section>
+
+
+<hr>
+
+
+<section id="carrito">
+
+
+    <h2>Carrito</h2>
+
+
+    <button onclick="mostrarCarrito()">
+        Mostrar carrito
+    </button>
+
+
+    <br><br>
+
+
+    <ul id="listaCarrito"></ul>
+
+
+    <p>
+        Total: $<span id="total">0</span>
+    </p>
+
+
+    <label>
+        <input type="checkbox" id="efectivo">
+     
+        Pago en efectivo (10% descuento)
+    </label>
+
+
+</section>
+
+
+<script>
+
+
+let carrito = [];
+let stickers = new Set();
+
+
+function agregarDisco(nombre, precio, boton){
+
+
+    let producto = boton.parentElement;
+    let vinilo = producto.querySelector(".vinilo");
+
+
+    let precioFinal = precio;
+    let nombreFinal = nombre;
+
+
+    if(vinilo.checked){
+        precioFinal += 10000;
+        nombreFinal += " (Vinilo)";
+    }
+
+
+    carrito.push({
+        nombre: nombreFinal,
+        precio: precioFinal
+    });
+
+
+    alert(nombreFinal + " agregado al carrito.");
+}
+
+
+function agregarSticker(nombre, precio){
+
+
+    if(stickers.has(nombre)){
+        alert("Ese sticker ya fue agregado.");
+        return;
+    }
+
+
+    stickers.add(nombre);
+
+
+    carrito.push({
+        nombre: nombre,
+        precio: precio
+    });
+
+
+    alert(nombre + " agregado al carrito.");
+}
+
+
+function agregarLibro(nombre, precio, numero){
+
+
+    let radios = document.getElementsByName("tapa" + numero);
+
+
+    let tipo = "";
+
+
+    if(radios[0].checked){
+        tipo = "Tapa dura";
+    }
+    else if(radios[1].checked){
+        tipo = "Tapa blanda";
+    }
+    else{
+        alert("Seleccione el tipo de tapa.");
+        return;
+    }
+
+
+    carrito.push({
+        nombre: nombre + " (" + tipo + ")",
+        precio: precio
+    });
+
+
+    alert(nombre + " agregado al carrito.");
+}
+
+
+function mostrarCarrito(){
+
+
+    let lista = document.getElementById("listaCarrito");
+    lista.innerHTML = "";
+
+    let total = 0;
+
+    for(let i = 0; i < carrito.length; i++){
+
+
+        let li = document.createElement("li");
+        li.textContent = carrito[i].nombre + " - $" + carrito[i].precio;
+
+        lista.appendChild(li);
+
+        total += carrito[i].precio;
+    }
+
+
+    if(total > 10000){
+        total *= 0.95;
+
+    }
+
+
+    if(document.getElementById("efectivo").checked){
+        total *= 0.90;
+    }
+
+
+    document.getElementById("total").textContent = total;
+}
+
+
+</script>
+
+
+</body>
+</html>
+
